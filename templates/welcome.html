@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Welcome VPACE</title>
+    </head>
+    <body>
+        <h1>Welcome, Know your team members</h1>
+        <h2>TEAM VPACE</h2>
+        {% for member in team_members %}
+            <h4><a href="/member/{{ member.name }}-{{ member.role }}">{{ member.name }} - {{ member.role }}</a></h4>
+        {% endfor %}
+    </body>
+</html>
